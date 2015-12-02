@@ -2,7 +2,8 @@ sudo: false
 language: ruby
 rvm:
   - rbx-2.2.10
-  - ruby-head
+install:
+  - gem install rspec -V
 script:
   - rspec
 branches:
