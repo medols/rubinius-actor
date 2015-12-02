@@ -9,12 +9,13 @@ describe "Rubinius::Actor.spawn_link" do
           Rubinius::Actor.receive do |m|
             m.when(:die) { raise 'dying' }
           end
+
         end
       end
     end
 
     actor << :die
-    msg = Rubinius::Actor.receive
+#    msg = Rubinius::Actor.receive
     msg[0].should == :exit
   end
 end
