@@ -1,7 +1,7 @@
 sudo: false
 language: ruby
 rvm:
-  - rbx-2.2.10
+  - rbx
 install:
   - gem install rspec -V
 script:
