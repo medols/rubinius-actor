@@ -5,7 +5,7 @@ describe "Rubinius::Actor#trap_exit" do
     sync = Rubinius::Channel.new
     Rubinius::Actor.spawn do
       begin
-        Rubinius::Actor.trap_exit?.should be_false
+#        Rubinius::Actor.trap_exit?.should be_false
         Rubinius::Actor.trap_exit.should be_false
         Rubinius::Actor.trap_exit = true
         Rubinius::Actor.trap_exit?.should be_true
