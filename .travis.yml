@@ -1,0 +1,10 @@
+sudo: false
+language: ruby
+rvm:
+  - rbx-2.2.10
+  - ruby-head
+script:
+  - rspec
+branches:
+  only:
+    - master
